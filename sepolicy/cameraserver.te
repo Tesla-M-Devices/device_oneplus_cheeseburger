@@ -2,3 +2,7 @@ allow cameraserver persist_file:file rw_file_perms;
 allow cameraserver persist_file:file setattr;
 allow cameraserver cameraserver:process execmem;
 allow cameraserver shell_exec:file execute;
+allow cameraserver diag_prop:file read;
+allow cameraserver diag_prop:property_service set;
+allow cameraserver shell_exec:file { read open };
+
